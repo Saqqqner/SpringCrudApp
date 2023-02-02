@@ -5,8 +5,9 @@
     <title>Human</title>
 </head>
 <body>
-<p th:text="${person.getName()}">VALUE</p>
-id is :
+<p th:text="${person.getName() + ' ' + person.getSurname()}">VALUE</p>
+<p th:text="${'Age :'+ person.getAge()}">VALUE</p>
+<p th:text="${'Email : ' + person.getEmail()}">VALUE</p>
 <p th:text="${person.getId()}">VALUE</p>
 <br/>
 <hr/>

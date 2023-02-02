@@ -9,14 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51446a94-84a1-424d-ba48-841d6c6a6062" name="Changes" comment="V0.1 post">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
+    <list default="true" id="51446a94-84a1-424d-ba48-841d6c6a6062" name="Changes" comment="V0.1 valid">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/adel/springweb/config/MySpringMvcDispatcherSerlvetIntitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/adel/springweb/config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/adel/springweb/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/adel/springweb/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/adel/springweb/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/adel/springweb/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +59,11 @@
     "last_opened_file_path": "C:/Users/Saqner/IdeaProjects/SpringCrudApp",
     "settings.editor.selected.configurable": "settings.json.schema",
     "spring.configuration.checksum": "919bea32bee00c5ec25cd084457b902e"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -170,6 +172,9 @@
       <workItem from="1674145676495" duration="840000" />
       <workItem from="1674212934475" duration="696000" />
       <workItem from="1674229290893" duration="5526000" />
+      <workItem from="1674748396243" duration="76000" />
+      <workItem from="1675083200994" duration="3107000" />
+      <workItem from="1675094589496" duration="4598000" />
     </task>
     <task id="LOCAL-00001" summary="V0.1">
       <created>1673448408215</created>
@@ -185,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674145747079</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="V0.1 valid">
+      <created>1675086299661</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675086299661</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +217,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="V0.1" />
     <MESSAGE value="V0.1 post" />
-    <option name="LAST_COMMIT_MESSAGE" value="V0.1 post" />
+    <MESSAGE value="V0.1 valid" />
+    <option name="LAST_COMMIT_MESSAGE" value="V0.1 valid" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
