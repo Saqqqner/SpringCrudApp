@@ -107,3 +107,5 @@ buildNumber.properties
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jarre!/src/main/resources/database.properties
 !/src/main/resources/database.properties
+!/.idea/misc.xml
+!/.idea/uiDesigner.xml
