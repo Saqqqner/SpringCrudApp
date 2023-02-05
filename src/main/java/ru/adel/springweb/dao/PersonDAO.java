@@ -6,9 +6,11 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import ru.adel.springweb.models.Person;
 
-import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * @author Neil Alishev
+ */
 @Component
 public class PersonDAO {
 
@@ -29,7 +31,7 @@ public class PersonDAO {
     }
 
     public void save(Person person) {
-        jdbcTemplate.update("INSERT INTO Person VALUES(1, ?, ?, ?,?)", person.getName(),person.getSurname(), person.getAge(),
+        jdbcTemplate.update("INSERT INTO Person VALUES(1, ?, ?, ?, ?)", person.getName(),person.getSurname(), person.getAge(),
                 person.getEmail());
     }
 
@@ -42,4 +44,3 @@ public class PersonDAO {
         jdbcTemplate.update("DELETE FROM Person WHERE id=?", id);
     }
 }
-
