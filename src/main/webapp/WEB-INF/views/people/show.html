@@ -2,20 +2,46 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Human</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Show</title>
 </head>
 <body>
-<p th:text="${person.getName() + ' ' + person.getSurname()}">VALUE</p>
-<p th:text="${'Age :'+ person.getAge()}">VALUE</p>
+<p th:text="${person.getFullName() + ', ' + person.getYearOfBirth()}">VALUE</p>
+<p th:text="${'Age :'+ person.getYearOfBirth()}">VALUE</p>
 <p th:text="${'Email : ' + person.getEmail()}">VALUE</p>
+<p th:text="${'Address : ' + person.getAddress()}">VALUE</p>
 <p th:text="${person.getId()}">VALUE</p>
-<br/>
-<hr/>
-<a th:href="@{/people/{id}/edit(id=${person.getId()})}">Edit </a>
-<br/>
-<hr/>
-<form th:method="DELETE" th:action="@{/people/{id}(id=${person.getId()})}">
-    <input type="submit" value="Delete"/>
+<div th:if="${books.isEmpty()}">
+    <p>Человек пока не взял ни одной книги</p>
+    <hr/>
+</div>
+
+<div th:if="${!books.isEmpty()}">
+    <hr/>
+    <b>Книги:</b>
+    <br/>
+    <table th:each="book : ${books}">
+        <tr>
+            <td>
+                <span th:text="${book.getTitle() + ', ' + book.getAuthor() + ', ' + book.getYear()}"
+                      th:style="${book.isExpired()} ? 'color: red' : 'color: black'">
+                    book
+                </span>
+            </td>
+        </tr>
+    </table>
+    <hr/>
+</div>
+
+<form th:method="GET" th:action="@{/people/{id}/edit(id=${person.getId()})}">
+    <input type="submit" value="Редактировать"/>
 </form>
+
+<form th:method="DELETE" th:action="@{/people/{id}(id=${person.getId()})}">
+    <input type="submit" value="Удалить"/>
+</form>
+
 </body>
 </html>
+
+
